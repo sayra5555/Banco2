@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class FrmClientes
+    partial class FrmCuentas
     {
         /// <summary>
         /// Required designer variable.
@@ -29,71 +29,99 @@
         private void InitializeComponent()
         {
             this.gboxClientes = new System.Windows.Forms.GroupBox();
-            this.cboxCategoria = new System.Windows.Forms.ComboBox();
+            this.txtFechaApertura = new System.Windows.Forms.TextBox();
+            this.txtCodigoCuenta = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cboxTipocuenta = new System.Windows.Forms.ComboBox();
             this.btnGuardar = new FontAwesome.Sharp.IconButton();
             this.btnActualizar = new FontAwesome.Sharp.IconButton();
             this.btnCancelar = new FontAwesome.Sharp.IconButton();
             this.cboxEstado = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtDepartamento = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtPais = new System.Windows.Forms.TextBox();
+            this.txtSaldo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtNombres = new System.Windows.Forms.TextBox();
+            this.txtNumerocuenta = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodigoCliente = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.btnEliminar = new FontAwesome.Sharp.IconButton();
+            this.dgvCuentas = new System.Windows.Forms.DataGridView();
             this.gboxClientes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCuentas)).BeginInit();
             this.SuspendLayout();
             // 
             // gboxClientes
             // 
-            this.gboxClientes.Controls.Add(this.cboxCategoria);
+            this.gboxClientes.Controls.Add(this.txtFechaApertura);
+            this.gboxClientes.Controls.Add(this.txtCodigoCuenta);
+            this.gboxClientes.Controls.Add(this.label5);
+            this.gboxClientes.Controls.Add(this.cboxTipocuenta);
             this.gboxClientes.Controls.Add(this.btnGuardar);
             this.gboxClientes.Controls.Add(this.btnActualizar);
             this.gboxClientes.Controls.Add(this.btnCancelar);
             this.gboxClientes.Controls.Add(this.cboxEstado);
             this.gboxClientes.Controls.Add(this.label8);
             this.gboxClientes.Controls.Add(this.label7);
-            this.gboxClientes.Controls.Add(this.txtDireccion);
             this.gboxClientes.Controls.Add(this.label6);
-            this.gboxClientes.Controls.Add(this.txtDepartamento);
-            this.gboxClientes.Controls.Add(this.label4);
-            this.gboxClientes.Controls.Add(this.txtPais);
+            this.gboxClientes.Controls.Add(this.txtSaldo);
             this.gboxClientes.Controls.Add(this.label3);
-            this.gboxClientes.Controls.Add(this.txtNombres);
+            this.gboxClientes.Controls.Add(this.txtNumerocuenta);
             this.gboxClientes.Controls.Add(this.label2);
             this.gboxClientes.Controls.Add(this.txtCodigoCliente);
             this.gboxClientes.Controls.Add(this.label1);
             this.gboxClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gboxClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(34)))), ((int)(((byte)(118)))));
-            this.gboxClientes.Location = new System.Drawing.Point(4, 10);
+            this.gboxClientes.Location = new System.Drawing.Point(1, 11);
             this.gboxClientes.Margin = new System.Windows.Forms.Padding(2);
             this.gboxClientes.Name = "gboxClientes";
             this.gboxClientes.Padding = new System.Windows.Forms.Padding(2);
             this.gboxClientes.Size = new System.Drawing.Size(866, 204);
-            this.gboxClientes.TabIndex = 0;
+            this.gboxClientes.TabIndex = 1;
             this.gboxClientes.TabStop = false;
-            this.gboxClientes.Text = "DATOS CLIENTES";
+            this.gboxClientes.Text = "DATOS CUENTA";
             // 
-            // cboxCategoria
+            // txtFechaApertura
             // 
-            this.cboxCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(34)))), ((int)(((byte)(118)))));
-            this.cboxCategoria.FormattingEnabled = true;
-            this.cboxCategoria.Items.AddRange(new object[] {
-            "Activo",
-            "Inactivo"});
-            this.cboxCategoria.Location = new System.Drawing.Point(469, 103);
-            this.cboxCategoria.Margin = new System.Windows.Forms.Padding(2);
-            this.cboxCategoria.Name = "cboxCategoria";
-            this.cboxCategoria.Size = new System.Drawing.Size(148, 28);
-            this.cboxCategoria.TabIndex = 19;
+            this.txtFechaApertura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFechaApertura.Location = new System.Drawing.Point(483, 146);
+            this.txtFechaApertura.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFechaApertura.Name = "txtFechaApertura";
+            this.txtFechaApertura.Size = new System.Drawing.Size(148, 23);
+            this.txtFechaApertura.TabIndex = 23;
+            // 
+            // txtCodigoCuenta
+            // 
+            this.txtCodigoCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigoCuenta.Location = new System.Drawing.Point(483, 31);
+            this.txtCodigoCuenta.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCodigoCuenta.Name = "txtCodigoCuenta";
+            this.txtCodigoCuenta.Size = new System.Drawing.Size(148, 23);
+            this.txtCodigoCuenta.TabIndex = 21;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(374, 38);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(105, 16);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Codigo cuentas:";
+            // 
+            // cboxTipocuenta
+            // 
+            this.cboxTipocuenta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(34)))), ((int)(((byte)(118)))));
+            this.cboxTipocuenta.FormattingEnabled = true;
+            this.cboxTipocuenta.Items.AddRange(new object[] {
+            "Ahorro",
+            "Monetario"});
+            this.cboxTipocuenta.Location = new System.Drawing.Point(483, 67);
+            this.cboxTipocuenta.Margin = new System.Windows.Forms.Padding(2);
+            this.cboxTipocuenta.Name = "cboxTipocuenta";
+            this.cboxTipocuenta.Size = new System.Drawing.Size(148, 28);
+            this.cboxTipocuenta.TabIndex = 19;
             // 
             // btnGuardar
             // 
@@ -151,7 +179,7 @@
             this.cboxEstado.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.cboxEstado.Location = new System.Drawing.Point(469, 137);
+            this.cboxEstado.Location = new System.Drawing.Point(483, 103);
             this.cboxEstado.Margin = new System.Windows.Forms.Padding(2);
             this.cboxEstado.Name = "cboxEstado";
             this.cboxEstado.Size = new System.Drawing.Size(148, 28);
@@ -161,7 +189,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(374, 137);
+            this.label8.Location = new System.Drawing.Point(374, 115);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 16);
@@ -172,82 +200,52 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(374, 107);
+            this.label7.Location = new System.Drawing.Point(374, 153);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 16);
+            this.label7.Size = new System.Drawing.Size(106, 16);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Categoria";
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccion.Location = new System.Drawing.Point(469, 70);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(273, 23);
-            this.txtDireccion.TabIndex = 11;
+            this.label7.Text = "Fecha Apertura:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(374, 74);
+            this.label6.Location = new System.Drawing.Point(374, 76);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 16);
+            this.label6.Size = new System.Drawing.Size(103, 16);
             this.label6.TabIndex = 10;
-            this.label6.Text = "Dirección:";
+            this.label6.Text = "Tipo de cuenta:";
             // 
-            // txtDepartamento
+            // txtSaldo
             // 
-            this.txtDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDepartamento.Location = new System.Drawing.Point(123, 132);
-            this.txtDepartamento.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDepartamento.Name = "txtDepartamento";
-            this.txtDepartamento.Size = new System.Drawing.Size(148, 23);
-            this.txtDepartamento.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(28, 136);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 16);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Departamento:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // txtPais
-            // 
-            this.txtPais.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPais.Location = new System.Drawing.Point(123, 102);
-            this.txtPais.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPais.Name = "txtPais";
-            this.txtPais.Size = new System.Drawing.Size(148, 23);
-            this.txtPais.TabIndex = 5;
+            this.txtSaldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSaldo.Location = new System.Drawing.Point(157, 124);
+            this.txtSaldo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSaldo.Name = "txtSaldo";
+            this.txtSaldo.Size = new System.Drawing.Size(148, 23);
+            this.txtSaldo.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(28, 106);
+            this.label3.Location = new System.Drawing.Point(28, 133);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 16);
+            this.label3.Size = new System.Drawing.Size(45, 16);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Pais:";
+            this.label3.Text = "Saldo:";
             // 
-            // txtNombres
+            // txtNumerocuenta
             // 
-            this.txtNombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombres.Location = new System.Drawing.Point(123, 72);
-            this.txtNombres.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(234, 23);
-            this.txtNombres.TabIndex = 3;
+            this.txtNumerocuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumerocuenta.Location = new System.Drawing.Point(157, 69);
+            this.txtNumerocuenta.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNumerocuenta.Name = "txtNumerocuenta";
+            this.txtNumerocuenta.Size = new System.Drawing.Size(200, 23);
+            this.txtNumerocuenta.TabIndex = 3;
             // 
             // label2
             // 
@@ -256,14 +254,14 @@
             this.label2.Location = new System.Drawing.Point(28, 76);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 16);
+            this.label2.Size = new System.Drawing.Size(125, 16);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Nombres:";
+            this.label2.Text = "Numero de cuenta:";
             // 
             // txtCodigoCliente
             // 
             this.txtCodigoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigoCliente.Location = new System.Drawing.Point(123, 38);
+            this.txtCodigoCliente.Location = new System.Drawing.Point(157, 42);
             this.txtCodigoCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigoCliente.Name = "txtCodigoCliente";
             this.txtCodigoCliente.Size = new System.Drawing.Size(148, 23);
@@ -280,55 +278,36 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Codigo cliente:";
             // 
-            // dgvClientes
+            // dgvCuentas
             // 
-            this.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvClientes.BackgroundColor = System.Drawing.Color.White;
-            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClientes.GridColor = System.Drawing.Color.DarkGray;
-            this.dgvClientes.Location = new System.Drawing.Point(4, 221);
-            this.dgvClientes.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvClientes.Name = "dgvClientes";
-            this.dgvClientes.RowHeadersWidth = 51;
-            this.dgvClientes.RowTemplate.Height = 24;
-            this.dgvClientes.Size = new System.Drawing.Size(866, 266);
-            this.dgvClientes.TabIndex = 1;
-            this.dgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellContentClick);
+            this.dgvCuentas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvCuentas.BackgroundColor = System.Drawing.Color.White;
+            this.dgvCuentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCuentas.GridColor = System.Drawing.Color.DarkGray;
+            this.dgvCuentas.Location = new System.Drawing.Point(1, 229);
+            this.dgvCuentas.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvCuentas.Name = "dgvCuentas";
+            this.dgvCuentas.RowHeadersWidth = 51;
+            this.dgvCuentas.RowTemplate.Height = 24;
+            this.dgvCuentas.Size = new System.Drawing.Size(866, 266);
+            this.dgvCuentas.TabIndex = 2;
+            this.dgvCuentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCuentas_CellContentClick);
             // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(34)))), ((int)(((byte)(118)))));
-            this.btnEliminar.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.btnEliminar.IconColor = System.Drawing.Color.Red;
-            this.btnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEliminar.IconSize = 35;
-            this.btnEliminar.Location = new System.Drawing.Point(765, 496);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(97, 32);
-            this.btnEliminar.TabIndex = 19;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            // 
-            // FrmClientes
+            // FrmCuentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(878, 538);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.dgvClientes);
+            this.Controls.Add(this.dgvCuentas);
             this.Controls.Add(this.gboxClientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FrmClientes";
-            this.Text = "FrmClientes";
-            this.Load += new System.EventHandler(this.FrmClientes_Load);
+            this.Name = "FrmCuentas";
+            this.Text = "FrmCuentas";
+            this.Load += new System.EventHandler(this.FrmCuentas_Load);
             this.gboxClientes.ResumeLayout(false);
             this.gboxClientes.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCuentas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -336,24 +315,23 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gboxClientes;
-        private System.Windows.Forms.DataGridView dgvClientes;
+        private System.Windows.Forms.ComboBox cboxTipocuenta;
+        private FontAwesome.Sharp.IconButton btnGuardar;
+        private FontAwesome.Sharp.IconButton btnActualizar;
+        private FontAwesome.Sharp.IconButton btnCancelar;
+        private System.Windows.Forms.ComboBox cboxEstado;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtDepartamento;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtPais;
+        private System.Windows.Forms.TextBox txtSaldo;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtNombres;
+        private System.Windows.Forms.TextBox txtNumerocuenta;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCodigoCliente;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cboxEstado;
-        private FontAwesome.Sharp.IconButton btnCancelar;
-        private FontAwesome.Sharp.IconButton btnGuardar;
-        private FontAwesome.Sharp.IconButton btnActualizar;
-        private FontAwesome.Sharp.IconButton btnEliminar;
-        private System.Windows.Forms.ComboBox cboxCategoria;
+        private System.Windows.Forms.DataGridView dgvCuentas;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCodigoCuenta;
+        private System.Windows.Forms.TextBox txtFechaApertura;
     }
 }
